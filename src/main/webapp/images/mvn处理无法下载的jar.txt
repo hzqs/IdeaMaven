@@ -1,0 +1,20 @@
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=G:/maven-path/com.oracle/ojdbc6.jar
+
+ 4.在pom.xml中添加以下代码：
+
+  <!-- oracle数据库驱动 -->
+  <dependency>
+       <groupId>com.oracle</groupId>
+       <artifactId>ojdbc14</artifactId>
+      <version>10.2.0.1.0</version>
+  </dependency>
+
+-----------------
+这是开源中国的maven远程仓库地址，希望你用得到！
+<repositories>
+    <repository>
+         <id>CN</id>
+         <name>OSChina Central</name>                                           
+         <url>http://maven.oschina.net/content/groups/public/</url>
+    </repository>
+</repositories>
